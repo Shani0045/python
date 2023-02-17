@@ -1,0 +1,19 @@
+fetch all row and column from table.
+----------------------------------
+1.select* from table_name;
+
+2.select name,age from table_name;
+
+3.select* from table_name where age=27;
+
+4.select name from table_name where id=3;
+
+5.select name from table_name where address="allahabad";
+
+6.select * from table_name where id=3 AND address="allahabad";
+
+7.select * from table_name where address="allahabad" and (id<10);
+
+8.select * from table_name where id=3 or address="mau";
+
+9.select name from table_name where (id=3 and address="kanpur");

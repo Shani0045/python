@@ -1,0 +1,16 @@
+aggregate function
+------------------------------
+1.count()
+2.sum()
+3.avg()
+4.min()
+5.max()
+6.first()
+7.last()
+
+select aggregate_fun(column_name) as alias from table_name where condition;
+
+-------------------------------
+1.select count(column_name) as alias from table_name where condition;
+
+

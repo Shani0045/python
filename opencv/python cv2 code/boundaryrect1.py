@@ -1,0 +1,21 @@
+import cv2
+import numpy as np
+img=cv2.imread("red-number-5.jpg")
+img1=cv2.resize(img,(640,480))
+gray=cv2.cvtColor(img1,cv2.COLOR_BGR2GRAY)
+_,thresh=cv2.threshold(gray,240,255,0)
+kernal=cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(5,5))
+dilate=cv2.dilate(thresh,kernal)
+image,contours,_=cv2.findContours(dilate,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+
+print(len(contours))
+rect=cv2.minAreaRect(contours[1])
+box=cv2.boxPoints(rect)
+box=np.intc(box)
+# x,y,w,h=cv2.boundingRect(contours[1])
+cv2.drawContours(img1,[box],-1,(0,255,0),5)
+# cv2.rectangle(img1,(x,y),(x+w,y+h),(255,0,0),5)
+# cv2.imshow("orignal",img1)
+cv2.imshow("contour",img1)
+cv2.waitKey(0)
+cv2.destroyAllWindows()

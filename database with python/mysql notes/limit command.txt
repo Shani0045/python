@@ -1,0 +1,6 @@
+select* from table_name limit 4;
+
+
+1 se 3 tak ka data dega
+---------------------------------------
+

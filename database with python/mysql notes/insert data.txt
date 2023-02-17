@@ -1,0 +1,6 @@
+
+INSERT INTO TABLE_NAME VALUES(VAL1,VAL2,VAL3...),(val1,val2,val3...),(val1,val2,val3...);
+
+or 
+
+insert into table_name(col1,col2,col3....) values(val1,val2,val3...),(val1,val2,val3...);

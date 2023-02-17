@@ -1,0 +1,18 @@
+IN CLAUSE
+-----------------------------------
+
+SELECT* FROM TABLE_NAME WHERE STUDENT_NAME IN("SHANI","AMIT","RAHUL");
+
+
+YE wo data return karta hai jaha par shani amit or rahul me se koi student milega.
+
+or 
+----------------------------------------------------------
+select* from table_name where student_name ="shani"
+or student_name="amit" or student_name="rahul";
+
+----------------------------------------------------------
+
+Not IN
+-------------------
+In ka ulta hai.

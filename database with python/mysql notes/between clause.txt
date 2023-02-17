@@ -1,0 +1,10 @@
+Between clause:
+-----------------------------
+select* from table_name where id between val1 and val2;
+
+select* from student where id between 1 and 3;
+
+
+1 se lekar 3 tak ki id return karega.
+----------------------------------------------------
+

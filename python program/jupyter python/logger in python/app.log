@@ -1,0 +1,5 @@
+2021-07-25 22:28:14,876 - 7 - ERROR - name 'a' is not defined
+Traceback (most recent call last):
+  File "<ipython-input-1-70c2c014d92d>", line 5, in <module>
+    print(a)
+NameError: name 'a' is not defined

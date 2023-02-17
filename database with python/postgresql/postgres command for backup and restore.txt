@@ -1,0 +1,17 @@
+backup database:  make sure you are in postgres bin folder
+_____________________________________________________
+pg_dump -U username -d databasename > filename.backup
+
+pg_dump.exe -U username -d databasename > filename.backup
+
+for python
+____________
+
+f'pg_dump.exe "host={host} port={port} dbname={dbname} user={user} password={password}" > {file_name}'
+
+
+restore database:
+______________________________________________________
+1. pg_restore -U postgres -d camp -1 filename
+
+2. psql -U username -d databasename -1 -f filename.sql

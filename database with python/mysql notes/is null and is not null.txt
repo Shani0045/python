@@ -1,0 +1,10 @@
+is null:
+----------------------------
+
+1.select* from student where id is NULL;
+
+is not null:
+----------------------------------------
+
+2.select* from student where id is not NULL;
+

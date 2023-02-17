@@ -1,0 +1,4 @@
+install sql server 2017
+install ssms
+
+pip install pyodbc     # to connect with python

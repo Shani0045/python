@@ -1,0 +1,15 @@
+1.delete database
+----------------------------
+drop database database_name;
+
+
+-----------------------------
+2.delete table
+------------------------------
+1.drop table table_name;     	Delete complete data from table.and table structure.
+	
+2.truncate table table_name; 	delete all data from table not table structure.
+
+3.delete from table_name where condition;   delete data(record) row from the table based on condition means you can remove row.	
+
+4.delete from table_name;		delete all row from table.not table structure.

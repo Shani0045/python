@@ -1,0 +1,2 @@
+
+select * from drivers where convert(varchar,address)='noida';  #for text data type convert into varchar;

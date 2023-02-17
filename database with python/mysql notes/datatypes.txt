@@ -1,0 +1,56 @@
+
+
+Datatypes in mysql:-
+----------------------------------
+
+1.String
+2.Numeric
+3.Data and Time
+
+-----------------------------------
+
+1.String Datatype:-
+-----------------------
+			length
+
+1.CHAR(SIZE)         	0-255
+2.VARCHAR(SIZE)		0-65535
+3.BINARY(SIZE)		
+4.VARBINARY(SIZE)
+5.TINYTEXT		255character fixed
+6.TEXT(SIZE)		65,535 bytes
+7.MEDIUMTEXT		16,777,215 characters
+8.LONGTEXT		4,294,967,295 characters
+9.TINYBLOB		255 bytes
+10.BLOB(SIZE)		65535 bytes
+11.MEDIUMBLOB		16,777,215 bytes
+12.LONGBLOB		4,294,967,295 bytes
+13.ENUM(val1,val2,val3.....)  
+14.SET(val1,val2,val3.....)
+
+
+
+Numeric Datatypes:-
+-------------------------------
+1.BIT(size)     	1-64
+2.TINYINT(size)		-128 to +128
+3.INT(size)		-2147483648 to 2147483647
+4.INTEGER(size)	
+5.SMALLINT(size)  	-32768 to 32767
+6.MEDIUMINT(size)	-9223372036854775808 to -9223372036854775807
+7.BIGINT(size)
+8.BOOL			0 or 1
+9.BOOLEAN		0 or 1
+10.FLOAT(p)		p=2 means 20.20 p=3 means 393.398
+11.DOUBLE(size,d)
+12.DECIMAL(size,d)	size=60 d=30
+13.DEC(size,d)
+
+
+DateTime Datatype:-
+---------------------------------
+1.Date 			"1000-01-01" to "9999-12-31"
+2.DATATIME(fsp)		YYYY-MM-DD hh:mm:ss	
+3.TIMESTAMP(fsp)	same upar wala jo time bit chuka hai	
+4.TIME(fsp)		hh:mm:ss
+5.YEAR			YYYY

@@ -1,0 +1,67 @@
+Add new column
+___________________________
+ALTER TABLE distributors ADD COLUMN address varchar(30);
+
+Drop column
+__________________
+ALTER TABLE distributors DROP COLUMN address RESTRICT;
+
+___________________________________________
+To change the types of two existing columns in one operation:
+
+ALTER TABLE distributors
+    ALTER COLUMN address TYPE varchar(80),
+    ALTER COLUMN name TYPE varchar(100);
+
+
+
+To rename an existing column:
+________________________________
+
+ALTER TABLE distributors RENAME COLUMN address TO city;
+
+
+To rename an existing table:
+________________________________
+
+ALTER TABLE distributors RENAME TO suppliers;
+
+To add a not-null constraint to a column:
+___________________________________________
+
+ALTER TABLE distributors ALTER COLUMN street SET NOT NULL;
+
+To remove a not-null constraint from a column:
+________________________________________________
+
+ALTER TABLE distributors ALTER COLUMN street DROP NOT NULL;
+
+To add a check constraint to a table and all its children:
+____________________________________________________________
+ALTER TABLE distributors ADD CONSTRAINT zipchk CHECK (char_length(zipcode) = 5);
+
+
+To remove a check constraint from a table and all its children:
+
+ALTER TABLE distributors DROP CONSTRAINT zipchk;
+To remove a check constraint from one table only:
+
+ALTER TABLE ONLY distributors DROP CONSTRAINT zipchk;
+
+
+To add a foreign key constraint to a table:
+
+ALTER TABLE distributors ADD CONSTRAINT distfk FOREIGN KEY (address) REFERENCES addresses (address) MATCH FULL;
+To add a (multicolumn) unique constraint to a table:
+
+ALTER TABLE distributors ADD CONSTRAINT dist_id_zipcode_key UNIQUE (dist_id, zipcode);
+To add an automatically named primary key constraint to a table, noting that a table can only ever have one primary key:
+
+ALTER TABLE distributors ADD PRIMARY KEY (dist_id);
+
+
+
+
+
+
+

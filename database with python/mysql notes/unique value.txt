@@ -1,0 +1,5 @@
+select distinct column1,column2 from table_name;
+
+-------------------------------------------------
+
+select distinct* from table_name; 

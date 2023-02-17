@@ -1,0 +1,17 @@
+Constraints:- Means retriction on the columns.means kaisa data aayega kaisa nhi.
+----------------------------
+1.NOT NULL
+2.UNIQUE
+3.DEFAULT
+4.CHECK(condition)
+5.FOREIGN KEY
+6.PRIMARY KEY
+
+-------------------------
+CREATE TABLE personal1(Id INT NOT NULL UNIQUE,
+	name VARCHAR(30) NOT NULL,
+	age INT NOT NULL CHECK(age>=18),
+	gender VARCHAR(10) NOT NULL,
+	phone_no VARCHAR(10) NOT NULL UNIQUE,
+	city VARCHAR(10) NOT NULL DEFAULT 'agra');
+	

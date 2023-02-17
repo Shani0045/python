@@ -1,0 +1,49 @@
+1.ADD A COLUMN IN TABLE:
+-------------------------------
+ALTER TABLE table_name 
+ADD new_column_name,datatype constrains [first|after column_name],
+ADD new_column_name,datatype constrains [first|after column_name],
+ADD new_column_name,datatype constrains [first|after column_name];
+
+
+
+
+-------------------------------------
+
+alter table student add std_age int not null;
+
+alter table student add std_age int not null first std_address;
+
+
+
+2.MODIFY COLUMN IN TABLE:
+----------------------------------------
+
+ALTER TABLE table_name 
+MODIFY column_name datatype constraint
+first|after column_name;
+
+ALTER TABLE student
+MODIFY std_id int null;
+
+
+3.DROP COLUMN IN TABLE:
+--------------------------------------
+ALTER TABLE table_name
+drop column column_name;
+
+
+4.RENAME COLUMN IN TABLE:
+--------------------------------------
+
+ALTER TABLE table_name
+CHANGE COLUMN old_name new_name datatype constraint
+first|after column_name;
+
+5.RENAME TABLE_NAME
+------------------------------------------
+
+ALTER TABLE table_name
+RENAME TO new_table_name;
+
+

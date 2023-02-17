@@ -1,0 +1,8 @@
+Update data(record):
+---------------------------------------
+update table_name set field=new_value1,field2=new_val2.... where condition;
+
+
+--------------------------------
+
+update student set name="amit" where id=23;

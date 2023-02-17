@@ -1,0 +1,8 @@
+sorting
+---------------------------
+1.select* from table_name where address="allahabad" order by officer_name;
+
+2.select* from table_name where address="allahabad" order by officer_name ASC; 
+ asc means ascending order desc means descending order.
+
+3.select* from table_name where address="allahabad" order by officer_name ASC,address DESC;
